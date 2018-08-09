@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, AppRegistry } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import {
   createBottomTabNavigator,
   createStackNavigator
@@ -58,5 +58,3 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 });
-
-AppRegistry.registerComponent('App', () => App);
