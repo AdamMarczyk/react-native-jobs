@@ -1,6 +1,9 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { TabNavigator, StackNavigator } from 'react-navigation';
+import { StyleSheet, Text, View, AppRegistry } from 'react-native';
+import {
+  createBottomTabNavigator,
+  createStackNavigator
+} from 'react-navigation';
 import { Provider } from 'react-redux';
 import store from './store';
 import AuthScreen from './screens/AuthScreen';
@@ -12,16 +15,16 @@ import ReviewScreen from './screens/ReviewScreen';
 
 export default class App extends React.Component {
   render() {
-    const MainNavigator = TabNavigator(
+    const MainNavigator = createBottomTabNavigator(
       {
         welcome: { screen: WelcomeScreen },
         auth: { screen: AuthScreen },
         main: {
-          screen: TabNavigator({
+          screen: createBottomTabNavigator({
             map: { screen: MapScreen },
             deck: { screen: DeckScreen },
             review: {
-              screen: StackNavigator({
+              screen: createStackNavigator({
                 review: { screen: ReviewScreen },
                 settings: { screen: SettingsScreen }
               })
@@ -31,7 +34,7 @@ export default class App extends React.Component {
       },
       {
         navigationOptions: {
-          tabBar: { visible: false }
+          tabBarVisible: false
         },
         lazy: true
       }
@@ -55,3 +58,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 });
+
+AppRegistry.registerComponent('App', () => App);
