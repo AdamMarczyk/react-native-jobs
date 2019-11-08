@@ -4119,9 +4119,9 @@ latest-version@^3.0.0:
   dependencies:
     package-json "^4.0.0"
 
-latlng-to-zip@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/latlng-to-zip/-/latlng-to-zip-0.0.1.tgz#2cac49c918806364332024e98b3b87a6b5546f23"
+latlng-to-zip@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/latlng-to-zip/-/latlng-to-zip-0.0.2.tgz#1cce8e0bccfa6c208d36c09d2d3ca29c393d44b2"
   dependencies:
     axios "^0.15.3"
 
