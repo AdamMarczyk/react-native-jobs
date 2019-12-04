@@ -30,7 +30,7 @@
     "react-native": "~0.59.0",
     "react-native-elements": "^0.19.1",
     "react-navigation": "^2.11.2",
-    "react-redux": "^5.0.7",
+    "react-redux": "^5.1.2",
     "redux": "^4.0.4",
     "redux-persist": "^5.10.0",
     "redux-thunk": "^2.3.0",
