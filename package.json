@@ -26,7 +26,7 @@
     "latlng-to-zip": "0.0.2",
     "lodash": "^4.17.13",
     "qs": "^6.7.0",
-    "react": "16.3.1",
+    "react": "16.14.0",
     "react-native": "~0.59.0",
     "react-native-elements": "^0.19.1",
     "react-navigation": "^2.11.2",
